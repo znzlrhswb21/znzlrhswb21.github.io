@@ -2,7 +2,7 @@
   --nav-page-w: 1880px;      /* 페이지 최대폭 */
   --nav-inner-w: 1100px;     /* 헤더 콘텐츠 폭(요구사항) */
   --nav-bg: #0e0f12;
-  --nav-grad: linear-gradient(180deg,#111217,#0d0e12);
+  /* --nav-grad: linear-gradient(180deg,#111217,#0d0e12); */
   --nav-text: #e9edf4;
   --nav-muted: #a9b3bf;
   --nav-accent: #ff2a2a;
@@ -190,7 +190,7 @@
   width: 40px; height: 40px;
   border-radius: 10px;
   /* background: rgba(255,255,255,.08); */
-  background: #000;
+  background: #0b0c10;
   color:#fff;
   border:none;
   cursor:pointer;
@@ -210,7 +210,7 @@
   overflow-x:auto;               /* ← 스크롤 주체는 트랙 */
   scroll-snap-type:x mandatory;
   -webkit-overflow-scrolling:touch;
-
+  backface-visibility: hidden;
 }
 .track::-webkit-scrollbar{ display:none; }
 
